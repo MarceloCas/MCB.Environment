@@ -6,3 +6,6 @@ wsl -u root -e sudo service docker start;
 
 Write-Host("Remove docker compose with force and stop running services options");
 wsl -e docker compose rm -f -s;
+
+Write-Host("Remove directories");
+wsl -e docker compose rm -f -s;
